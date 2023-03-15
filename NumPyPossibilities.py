@@ -1,4 +1,9 @@
 import numpy
+g=print
+def print(x):
+    g("-"*30)
+    g(x)
+    g("-"*30+"\n")
 
 print(numpy.array([1,2,3]))#создание массива
 print(numpy.array([1,"2",True]))#создание массива из строк
@@ -14,3 +19,15 @@ print(b)
 
 print(b[1,0])
 print(b[1][0])
+
+
+
+#l3
+print(numpy.empty((3,2), dtype = "int16"))
+print(numpy.empty(3))
+
+print(numpy.eye(3,5))
+print(numpy.identity(3))
+print(numpy.zeros(3))
+print(numpy.ones(3))
+print(numpy.full(3,5))
