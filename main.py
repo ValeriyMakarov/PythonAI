@@ -1,4 +1,5 @@
 from NetWork import NeuralNetwork
 
 if __name__ == '__main__':
-    NeuralNetwork(20,20,2,0.3)
+    net = NeuralNetwork(3,5,2,0.3)
+    print (net.query([1,2,3]))
