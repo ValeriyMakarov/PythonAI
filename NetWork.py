@@ -9,7 +9,7 @@ class NeuralNetwork:
         self.output_layer_size = output_layer_size
         self.learning_rate = learning_rate
         self.weight_input_hidden = numpy.random.random((hidden_layer_size, input_layer_size))-.5
-        self.weight_hidden_output = numpy.random.random((input_layer_size, hidden_layer_size))-.5
+        self.weight_hidden_output = numpy.random.random((output_layer_size, hidden_layer_size))-.5
         self._activation_function = lambda x: scipy.special.expit(x)
 
     def train(self, inputs, expected):
